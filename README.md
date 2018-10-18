@@ -1,4 +1,8 @@
-## Config
+## Install
+
+1 Install `hetzner-kube`
+
+2 Create a config file
 
 ```sh
 #!/bin/sh
@@ -15,6 +19,18 @@ ZEIT_TOKEN=[your-zeit-token]
 # Add ssh-key by "$ hetzner-kube ssh-key add -n <name>"
 # it will use your .ssh/id_rsa
 SSH_KEY_NAME=[your-ssh-key]
+```
+
+3 Make sure `./cluster` has execute rights
+
+```
+$ chmod 700 ./cluster
+```
+
+Now you can create your cluster. Check the help:
+
+```
+./cluster help
 ```
 
 ## Dashboard
